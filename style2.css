@@ -1,0 +1,151 @@
+/* var */
+
+/* print version: det same som style.css berre utan farger. einaste tingen eg skreiv var tekst allign left (likte center i teksten syns det gav ein meir symetri da. */ 
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 30px 50px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+span {
+    display:none;
+}
+
+
+
+.logo{
+    display: none;
+}
+
+.sideBar ul {
+    display: none;
+}
+
+.sidebardiv{
+    
+    display: none;
+}
+
+  .sideBar a{
+    display: none;
+}
+  
+  .sideBar a:hover {
+    display: none;
+    
+}
+.container {
+display:flex;
+align-items: end;
+flex-direction: row-reverse;
+width: 55%;
+justify-content: flex-end;
+color: var(--b);
+flex-wrap:wrap;
+
+}
+.container {
+    margin: 0 -5px;
+    
+}
+.box1{
+    flex:1;
+    order:3;
+    background: var(--a);
+    margin: 0 5px;
+    color: var(--b);
+    max-height: 400px;
+    max-width: 400px;
+}
+    .box1 a{
+    color: var(--b);
+    text-transform: helvetica;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--b);
+}
+.box2{
+    flex:1;
+    order:1;
+    background: var(--a);
+    margin: 0 5px;
+    max-height: 400px;
+    max-width: 400px;
+    
+}
+    .box2 a{
+    color: var(--b);
+    text-transform: helvetica;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--b);
+}
+.box3{
+    flex:2;
+    order:2;
+    background: var(--a);
+    margin: 0 5px;
+    max-height: 400px;
+    max-width: 400px;
+}
+    .box3 a{
+    color: var(--b);
+    text-transform: helvetica;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--b);
+}
+
+.containeritem a{
+    display:block;
+    color: var(--b);
+    text-transform: helvetica;
+    font-size: 1rem;
+    box-shadow: var(--b);
+}
+  
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+}
+
+footer {
+    display: none;
+} 
+
+body {
+    font-family: "helvetica";
+    text-transform: uppercase;
+}
+
+.sidenav {
+    display: none;
+}
+
+.sidenav a {
+    display: none;
+}
+
+.sidenav a:hover {
+    display: none;
+}
+
+.sidenav .closebtn {
+    display: none;
+}
+
+.tekst{
+    font-family: "helvetica";
+    text-transform: none;
+}
+.tekst h1,h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+

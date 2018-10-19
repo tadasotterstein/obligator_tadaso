@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="style2.css" />
+    <script src="main.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+</head>
+
+
+<body> 
+        <!-- For Grid: wrapper start.  -->
+        <div class = "wrapper">
+    <header> 
+    
+    <!-- Logo Bilde -->
+        <section class="logo">
+            <a href="index.html"><img src="pic/logo.png" alt="logo"></a>
+        </section>
+        
+    <!-- Sidebar Navigation-->
+    
+    <nav class="sideBar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="opggave1.html">Github</a>
+            </li>
+            <li>
+                <a href="oppgave2.html">Media typer</a>
+            </li>
+            <li>
+                <a href="opggave3.html">CSS Layouts</a>
+            </li>
+        </ul>
+</nav>
+    
+</header> 
+    
+<aside id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://responsivedesign.is/">Responsiv design</a>
+    <a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/">Basics</a>
+    <a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">What & How to</a>
+    <a href="https://no.wikipedia.org/wiki/Responsiv_nettside">Wikipedia</a>
+    <a href="https://www.awwwards.com/websites/responsive-design/">Best of responsive design</a>
+    <a href="https://www.google.no/search?q=github&hl=no&authuser=0&source=lnms&sa=X&ved=0ahUKEwjrjPC03-rdAhVGposKHdueDE4Q_AUICSgA&biw=904&bih=928&dpr=1">Google Github Result</a>
+    <a href="https://www.youtube.com/watch?v=g13dSerjICk&t=1s"> Youtube video</a>
+</aside>  
+<aside>
+    <span style="float:right;font-size:20px;cursor:pointer" onclick="openNav()" >&#9776; Oppgaver </span>
+</aside>
+<!--Lag en artikkel basert på artikkelmalen du lagde i oppgave 2 der du beskriver de forskjellige metodene for layouts i CSS. Det er forventet at du beskriver minimum CSS Flexbox og CSS Grid i artikkelen, 
+    men ta gjerne med en beskrivelse av eldre metoder for å oppnå strukturerte layouts i CSS.
+
+Brukt gjerne illustrasjonsbilder aktivt i artikkelen for å illustrere viktige poenger, dette er særdeles viktig for å beskrive hvordan de forskjellige metodene avviker fra hverandre. 
+Du er også fri til å linke til eksterne ressurser som kan benyttes for å få en dypere forståelse for teknologiene men det er viktig at en eventuell leser av teksten vil få en basis forståelse for 
+teknologiene uten å måtte gå til eksterne sider. -->
+  
+<article class="tekst">
+<header>
+<h1> Layouts i CSS</h1>
+</header>
+<h3> Flexbox </h3>
+<p>
+    Flexbox var laga for å gi ein webutviklar ein effektiv måte å legge ut nettsida si på ein fin, oversiktleg måte. Flexbox spessialiserar seg på å distribuere plass til elementar til og med når den ikkje
+    veit kor store elemtane er. det er derfor den blir kalla for flex. poenget med flexbox er å gi wrapperen / containeren  evnen til å endre på elementane (høgde og breidde). flexbox utvid elementane 
+    for å fylle opp plassen i containeren. dette kan du sjå i indexen til denne nettsida. Flexbox elementet i midten brukar litt meir plass for at den skal fylle ut alt. den kan også minske elementane 
+    for at den skal hindre at dei går i kvarandre. 
+    hovudgrunnlaget til flexbox er å gjer elementane fleksible. og flexbox gjer jobben ganske bra. for døme kan du gå på index og justere på størrelsen til nettlesaren og da går flexbox elementane loddrett
+    for å unnga at dei blir gøymt vekk på grunn av størrelse. 
+    
+</p>
+<h3> CSS Grid</h3>
+<p>
+    CSS grid er den nyeste måten å stilere ei nettside på. det går ut på at ein lager ein container med div class="" for elementar du skal stilere med grid. denne måten gir deg veldig mykje frihet på korleis 
+    ein lager ei nettside. det grid gjer er at den "deler" opp nettsida i mange deler og legger ein element i kvar. fordelene med dette er at du får ein nettside som skalerer nesten automatisk, den gjør det automatisk
+    ryddig og gjær det veldig lett å tilpasse, legge inn, eller å berre style det godt. denne nettsida har mykje css grid i seg, navigasjons baren min for eksempel er laga i grid.
+    det som kanskje er det beste med grid er kor lett det er å berre leggje elementar inn og stilere det med CSS grid. til og med nybegynnere kan ta bruk av grid og gjære ein ganske grei jobb med nettsida. 
+    CSS grid er den sterkaste layout systemet ute akuratt nå på grunn av at den takler både kolonner og rader noko som Flexbox ikkje klarer. Flexbox verkar meir som ein 1-dimensjonel system, mens grid 
+    kan bli brukt til meir enn det. Når eg brukte grid la eg inn ein forelderelement som heitte wrapper, og den med child-elementane mine som kan bli kalla for grid items. 
+</p>
+<p> her er nokre illustrasjonsbilete som viser flexbox og grid. her ser vi at flex containeren verkar som ein forelder element til flex item. den går vassrett og tar opp så mykje plass som mogleg, nett som 
+    flexboxen i index.
+
+    når det gjelder grid ser vi at alt er under ein grid. det er derfor CSS grid er kanskje det beste alternativet for layouts akuratt nå, nettopp på grunn av at du kan endre på alt under 1 grid, og 
+    viss ein vil bli meir spessifik, så kaller du på child-elementet for eksempel .main og gjer kva du vil med den. 
+</p>
+<footer>
+       <p> skriven av Tadas Otterstein.</p>
+</footer>
+</article>
+<figcaption>
+<img src="pic/flex.png" alt="flex">
+<img src="pic/grid.png" alt="grid">
+<p> bildene her skal hjelpe å vise ein grunnleggjande illustrasjon på korleis flexbox og grid fungerer. </p>
+</figcaption>
+
+<nav class="sideBar">
+        <ul>
+            <li>
+                <a href="https://www.chillwindyeti.com">nettsida mi :)</a> <!-- den nettsida der er ikkje semantisk, men så er den også ein hobbyprosjekt og meir meint som ein css grid leikeplass -->
+            </li>
+        </ul>
+    </nav>
+<footer>
+        <p> Tadas Otterstein | Tadaso@hiof.no | &copy; <time date= "2018"> </time> </p>
+</footer>
+</body>
+</html>
