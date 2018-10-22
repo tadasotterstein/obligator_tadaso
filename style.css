@@ -1,4 +1,5 @@
 /* var */
+
 :root{
     --a: rgb(70, 72, 102);
     --b: rgb(209, 209, 209);
@@ -57,7 +58,9 @@ body {
 .sideBar a:hover {
     background: var(--e);
     color: var(--b);
+
 /* flexbox items */
+
 }
 .container {
     display:flex;
@@ -128,12 +131,16 @@ body {
     font-size: 1rem;
     box-shadow: var(--b);
 }
+
   /* grid wrapper */ 
+
 .wrapper {
     display: grid;
     grid-gap: 30px;
 }
+
 /* footer */
+
 footer {
     margin-top: 1rem;
     background: var(--a);
@@ -151,7 +158,9 @@ body {
     font-family: "helvetica";
     text-transform: uppercase;
 }
+
 /* hamburgermeny sorry michael, men eg syns dei er kule :( */ 
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -190,7 +199,9 @@ body {
 }
 
 /* tekst css */
+
 /* eg leika litt med tekst allign, og eg meina at center gir ein meir symetrisk effekt eg veit ikkje om det er korrekt så eg har berre commenta det ut, men eg likte det meir enn left da :) */ 
+
 .tekst{
     font-family: "helvetica";
     text-transform: none;
@@ -203,11 +214,34 @@ body {
     text-transform: uppercase;
 }
 
-/* media queueries */*
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.sideBar a{
+    white-space: nowrap;
 }
 
+.openNav{
+    font-size: 115px;
+}
 
+/* media queueries */
+
+@media (max-width: 1080px) {
+   .logo img{
+    width: 95%;
+    height: auto;
+  }
+  
+}
+
+@media (max-width: 700px) {
+    .sideBar a{
+        font-size: 15px;
+    }
+}
+
+ @media (max-width: 600px) {
+    .logo img{
+     width: 80%;
+     height: auto;
+   }
+   
+}
